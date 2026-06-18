@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinanTech Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="flex min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="w-64 bg-blue-950 text-white hidden md:block">
+            <div class="p-6">
+                <h1 class="text-2xl font-bold">FinanTech</h1>
+            </div>
+
+            <nav class="mt-6">
+                <ul>
+                    <li class="px-6 py-3 bg-blue-800">
+                        Dashboard
+                    </li>
+
+                    <li class="px-6 py-3 hover:bg-blue-800 cursor-pointer">
+                        Transações
+                    </li>
+
+                    <li class="px-6 py-3 hover:bg-blue-800 cursor-pointer">
+                        Cartões
+                    </li>
+
+                    <li class="px-6 py-3 hover:bg-blue-800 cursor-pointer">
+                        Investimentos
+                    </li>
+
+                    <li class="px-6 py-3 hover:bg-blue-800 cursor-pointer">
+                        Configurações
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo -->
+        <main class="flex-1 p-6">
+
+            <h2 class="text-3xl font-bold mb-6">
+                Dashboard Financeira
+            </h2>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+
+                <div class="bg-white rounded-2xl shadow p-5">
+                    <h3 class="text-gray-500">Saldo Atual</h3>
+                    <p class="text-3xl font-bold text-green-600">
+                        R$ 12.450,00
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow p-5">
+                    <h3 class="text-gray-500">Entradas</h3>
+                    <p class="text-3xl font-bold text-blue-600">
+                        R$ 5.300,00
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow p-5">
+                    <h3 class="text-gray-500">Saídas</h3>
+                    <p class="text-3xl font-bold text-red-600">
+                        R$ 2.150,00
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Gráfico -->
+            <div class="bg-white rounded-2xl shadow p-6 mb-6">
+
+                <h3 class="text-xl font-bold mb-4">
+                    Resumo Financeiro
+                </h3>
+
+                <canvas id="financialChart"></canvas>
+
+            </div>
+
+            <!-- Tabela -->
+            <div class="bg-white rounded-2xl shadow p-6">
+
+                <h3 class="text-xl font-bold mb-4">
+                    Últimas Transações
+                </h3>
+
+                <div class="overflow-x-auto">
+
+                    <table class="w-full">
+
+                        <thead>
+                            <tr class="border-b">
+                                <th class="text-left py-3">Data</th>
+                                <th class="text-left py-3">Descrição</th>
+                                <th class="text-left py-3">Valor</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr class="border-b">
+                                <td class="py-3">10/06</td>
+                                <td>Salário</td>
+                                <td class="text-green-600">
+                                    + R$ 3.500
+                                </td>
+                            </tr>
+
+                            <tr class="border-b">
+                                <td class="py-3">12/06</td>
+                                <td>Mercado</td>
+                                <td class="text-red-600">
+                                    - R$ 320
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-3">13/06</td>
+                                <td>Internet</td>
+                                <td class="text-red-600">
+                                    - R$ 120
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/script/script.js"> </script>
+</body>
+</html>
