@@ -1,15 +1,13 @@
 {
-<<<<<<< HEAD
   "name": "fintech",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts":
    {
-     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/styles.css --watch"
-    
-=======
-  "dependencies": {
+     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/styles.css --watch",
+
+  "dependencies":{
     "@tailwindcss/cli": "^4.3.1",
     "tailwindcss": "^4.3.1"
   },
@@ -20,20 +18,10 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> ff53274b9e8465e41bba93d905bd44d564f4e72d
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
-  "type": "commonjs",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.3.1",
-    "tailwindcss": "^4.3.1"
-  }
-  
-  
-=======
   "type": "commonjs"
->>>>>>> ff53274b9e8465e41bba93d905bd44d564f4e72d
+}
 }
